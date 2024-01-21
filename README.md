@@ -1,4 +1,4 @@
-#Теперь я изучаю JavaScript
+# Теперь я изучаю JavaScript
 
 **Учебник:** https://learn.javascript.ru/
 
