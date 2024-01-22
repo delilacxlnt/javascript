@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.1.1</title>
+	</head>
+	<body>
+		<p>
+			Дано число. Проверьте, отрицательное оно или нет. Выведите об этом
+			информацию в консоль.
+		</p>
+		<script>
+			let number = prompt("Введите число:", "");
+			if (number > 0) {
+				console.log(`Число ${number} - положительное.`);
+			} else if (number < 0) {
+				console.log(`Число ${number} - отрицательное.`);
+			} else if (number == 0 && !(number == "")) {
+				console.log(
+					`${number} не является ни отрицательным, ни положительным.`
+				);
+			} else {
+				console.log(`${number} не является числом.`);
+			}
+		</script>
+	</body>
+</html>
