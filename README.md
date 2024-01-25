@@ -34,7 +34,7 @@
 
 ---
 
-**Задачи**: https://code.mu/ru/javascript/tasker/stager/
+### Задачи: https://code.mu/ru/javascript/tasker/stager/
 
 ### Уровень 1.
 
