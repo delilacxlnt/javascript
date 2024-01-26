@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>1.3.1</title>
+	</head>
+	<body>
+		<p>
+			Дана строка. Если в этой строке более одного символа, выведите в
+			консоль предпоследний символ этой строки.
+		</p>
+		<script>
+			let str = prompt("Введите слово", "");
+			if (str.length > 1) {
+				alert(str[str.length - 2]);
+			} else {
+				alert(str[0]);
+			}
+		</script>
+	</body>
+</html>
