@@ -2,14 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>1.4.1</title>
+		<title>1.4.5</title>
 	</head>
 	<body>
-		<p>Выведите в консоль все целые числа от 1 до 100.</p>
+		<p>
+			Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
+		</p>
 		<script>
 			"use strict";
 			for (let i = 1; i <= 100; ++i) {
-				if (i % 2 == 0) {
+				if (i % 3 == 0) {
 					console.log(i);
 				}
 			}
