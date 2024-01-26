@@ -2,15 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>1.4.1</title>
+		<title>1.5.1</title>
 	</head>
 	<body>
-		<p>Выведите в консоль все целые числа от 1 до 100.</p>
+		<p>Найдите сумму всех целых чисел от 1 до 100.</p>
 		<script>
 			"use strict";
+			let counter = 0;
 			for (let i = 1; i <= 100; ++i) {
-				console.log(i);
+				counter += i;
 			}
+			console.log(counter);
 		</script>
 	</body>
 </html>

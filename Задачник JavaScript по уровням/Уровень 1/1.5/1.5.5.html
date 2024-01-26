@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.5.5</title>
+	</head>
+	<body>
+		<p>
+			Дана некоторая строка. Переберите и выведите в консоль по очереди
+			все символы с конца строки.
+		</p>
+		<script>
+			"use strict";
+			let str = prompt("Введите строку:", "");
+			// let str2 = null;
+			for (let i = str.length; i >= 0; --i) {
+				console.log(str[i]);
+				// str2 += str[i];
+			}
+			// console.log(str2);
+		</script>
+	</body>
+</html>

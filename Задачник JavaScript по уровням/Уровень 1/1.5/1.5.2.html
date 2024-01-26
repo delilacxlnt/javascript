@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.5.2</title>
+	</head>
+	<body>
+		<p>Найдите сумму всех целых четных чисел в промежутке от 1 до 100.</p>
+		<script>
+			"use strict";
+			let counter = 0;
+			for (let i = 1; i <= 100; ++i) {
+				if (i % 2 == 0) {
+					counter += i;
+				}
+			}
+			console.log(counter);
+		</script>
+	</body>
+</html>
