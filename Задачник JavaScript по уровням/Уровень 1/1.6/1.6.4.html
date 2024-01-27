@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.6.4</title>
+	</head>
+	<body>
+		<p>
+			Дан массив с числами. Найдите сумму тех элементов этого массива,
+			которые больше нуля и меньше десяти.
+		</p>
+		<script>
+			"use strict";
+			let arr = [-20, 5, 6, 12];
+			let sum = 0;
+			for (let i = 0; i < arr.length; ++i) {
+				if (arr[i] > 0 && arr[i] < 10) {
+					sum += arr[i];
+				}
+			}
+			console.log(sum);
+		</script>
+	</body>
+</html>

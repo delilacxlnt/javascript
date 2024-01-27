@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.6.2</title>
+	</head>
+	<body>
+		<p>
+			Дан массив с числами. Найдите сумму квадратных корней элементов
+			этого массива.
+		</p>
+		<script>
+			"use strict";
+			let arr = [4, 9];
+			let sum = 0;
+			for (let i = 0; i < arr.length; ++i) {
+				sum += arr[i] ** (1 / 2);
+			}
+			console.log(sum);
+		</script>
+	</body>
+</html>
