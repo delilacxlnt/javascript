@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.7.4</title>
+	</head>
+	<body>
+		<p>Дано некоторое число: 12345 Найдите сумму цифр этого числа.</p>
+		<script>
+			"use strict";
+			let num = 12345;
+			let str = num.toString();
+			let arr = [];
+			let sum = 0;
+			for (let i = 0; i < str.length; ++i) {
+				arr[i] = str[i];
+				sum += +arr[i];
+			}
+			console.log(sum);
+		</script>
+	</body>
+</html>
