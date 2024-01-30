@@ -8,13 +8,18 @@
 		<p>Дано некоторое число: 12345 Переверните его: 54321</p>
 		<script>
 			"use strict";
+			// let num = 12345;
+			// let str = num.toString();
+			// let arr = [];
+			// for (let i = 0; i < str.length; ++i) {
+			// 	arr[i] = str[i];
+			// }
+			// alert(arr.reverse());
+
+			//30.01.24
 			let num = 12345;
-			let str = num.toString();
-			let arr = [];
-			for (let i = 0; i < str.length; ++i) {
-				arr[i] = str[i];
-			}
-			alert(arr.reverse());
+			let arr = num.toString().split("").reverse().join("");
+			alert(+arr);
 		</script>
 	</body>
 </html>
