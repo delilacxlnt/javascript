@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.8.2</title>
+	</head>
+	<body>
+		<p>Заполните массив четными числами из промежутка от 1 до 100.</p>
+		<script>
+			"use strict";
+			let arr = [];
+			function getRndInteger(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			for (let i = 0; i < 10; ++i) {
+				arr[i] = getRndInteger(1, 100);
+				if (arr[i] % 2 != 0) {
+					arr[i]++;
+				}
+			}
+			console.log(arr);
+		</script>
+	</body>
+</html>

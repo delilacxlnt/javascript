@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>1.9.1</title>
+	</head>
+	<body>
+		<p>
+			Дан массив со строками. Оставьте в этом массиве только те строки,
+			которые начинаются на http://.
+		</p>
+		<script>
+			"use strict";
+			// let arr = [1, 2, 3];
+			// let removed = arr.splice(0, 2);
+			// console.log(removed);
+			// console.log(arr);
+
+			let arr = [
+				"http://123",
+				"098",
+				"567http://",
+				"http://123561",
+				"http://1845sdf",
+				"567http://",
+				"http://123568",
+			];
+			let newArr = [];
+			let j = 0;
+
+			console.log(arr);
+
+			for (let i = 0; i < arr.length; i++) {
+				if (arr[i].slice(0, 7) == "http://") {
+					newArr[j] = String(arr.splice(i, 1));
+					++j;
+					i--;
+				}
+			}
+			console.log(newArr);
+		</script>
+	</body>
+</html>
