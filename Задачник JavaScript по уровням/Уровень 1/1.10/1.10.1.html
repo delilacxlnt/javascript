@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.10.1</title>
+</head>
+<body>
+    <p>Заполнить массив</p>
+    <script>
+        'use strict'
+        function getRandomNum(min, max) {
+            return Math.floor(Math.random()*(max-min+1))+min;
+        }
+        let arr=[];
+        for (let i=0; i<10; ++i) {
+            arr[i]=getRandomNum(1,100);
+        }
+        console.log(arr);
+        
+    </script>
+    <script>
+        'use strict'
+        let num=12345;
+        let arr=+((String(num).split("")).reverse().join(""));
+        console.log(arr);
+        console.log(typeof arr);
+    </script>
+    <script>
+        'use strict'
+        let arr=[1,2,3,4,5,6];
+        while (arr.length!=0) {
+          console.log(arr.splice(0,2));
+        }
+    </script>
+    <script>
+        'use strict'
+        let arr1=[1,2,3];
+        let arr2=[4,5,6];
+        let newArr=(arr1.join("") + arr2.join("")).split("");
+        console.log(newArr);
+        console.log(typeof newArr);
+    </script>
+</body>
+</html>
