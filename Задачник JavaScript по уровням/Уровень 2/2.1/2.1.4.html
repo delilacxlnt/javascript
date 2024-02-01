@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2.1.4</title>
+	</head>
+	<body>
+		<p>
+			Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]
+			Найдите сумму первой половины элементов этого массива.
+		</p>
+		<script>
+			"use strict";
+			let arr = [1, 1, 1, 1, 1];
+			let sum = 0;
+			for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+				sum += arr[i];
+			}
+			console.log(sum);
+		</script>
+	</body>
+</html>

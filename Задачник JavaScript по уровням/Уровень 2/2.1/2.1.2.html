@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2.1.2</title>
+	</head>
+	<body>
+		<p>
+			Выведите в консоль все числа в промежутке от 1 до 1000, сумма первой
+			и второй цифры которых равна пяти.
+		</p>
+		<script>
+			"use strict";
+			let arr = [];
+			let j = 0;
+			for (let i = 0; i < 1000; ++i) {
+				if (
+					Array.from(String(i), Number)[0] +
+						Array.from(String(i), Number)[1] ==
+					5
+				) {
+					arr[j] = i;
+					j++;
+				}
+			}
+			console.log(arr);
+		</script>
+	</body>
+</html>
