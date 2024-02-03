@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2.2.4</title>
+	</head>
+	<body>
+		<p>
+			Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]
+			Поделите сумму первой половины элементов этого массива на сумму
+			второй половины элементов.
+		</p>
+		<script>
+			"use strict";
+			let arr2 = [3, 3, 3, 3, 1, 1, 1];
+			let arr1 = arr2.splice(0, arr2.length / 2);
+			function getSum(arr) {
+				let sum = 0;
+				for (let i = 0; i < arr.length; i++) {
+					sum += arr[i];
+				}
+				return sum;
+			}
+			console.log(getSum(arr1) / getSum(arr2));
+		</script>
+	</body>
+</html>
