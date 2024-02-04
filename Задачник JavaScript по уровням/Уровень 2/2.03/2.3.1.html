@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2.3.1</title>
+	</head>
+	<body>
+		<p>
+			Даны два слова. Проверьте, что последняя буква первого слова
+			совпадает с первой буквой второго слова.
+		</p>
+		<script>
+			"use strict";
+			let str1 = "слово";
+			let str2 = "один";
+			if (str1.slice(-1) == str2.slice(0, 1)) {
+				console.log(
+					"Последняя буква первого слова совпадает с первой буквой второго слова"
+				);
+			} else {
+				console.log("Не совпадает");
+			}
+		</script>
+	</body>
+</html>
