@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Стрелочные функции, основы</title>
+	</head>
+	<body>
+		<script>
+			"use strict";
+			// function ask(question, yes, no) {
+			// 	if (confirm(question)) yes();
+			// 	else no();
+			// }
+
+			// ask(
+			// 	"Вы согласны?",
+			// 	function () {
+			// 		alert("Вы согласились.");
+			// 	},
+			// 	function () {
+			// 		alert("Вы отменили выполнение.");
+			// 	}
+			// );
+			let question = "Вы согласны?";
+			let ask = confirm(question)
+				? () => alert("Вы согласились.")
+				: () => alert("Вы отменили выполнение.");
+
+			ask();
+		</script>
+	</body>
+</html>
