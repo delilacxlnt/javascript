@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2.4.2</title>
+	</head>
+	<body>
+		<p>
+			Дан объект с ключами и значениями. Запишите в первый массив ключи
+			объекта, а во второй - значения.
+		</p>
+		<script>
+			"use strict";
+			function makeKeysArray(obj, keysArray) {
+				keysArray = Object.keys(obj);
+				return Array.from(keysArray);
+			}
+			function makeValuesArray(obj, valuesArray) {
+				valuesArray = Object.values(obj);
+				return Array.from(valuesArray);
+			}
+			let object = {
+				name: "John",
+				age: 30,
+			};
+			let arr1 = [];
+			let arr2 = [];
+			console.log(makeKeysArray(object, arr1));
+			console.log(makeValuesArray(object, arr2));
+		</script>
+	</body>
+</html>

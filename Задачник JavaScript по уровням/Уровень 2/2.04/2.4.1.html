@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2.4.1</title>
+	</head>
+	<body>
+		<p>
+			Дана некоторая строка с буквами и цифрами. Получите позицию первой
+			цифры в этой строке.
+		</p>
+		<script>
+			"use strict";
+			function getFirstNumber(string) {
+				let i = 0;
+				for (; i < string.length; ++i) {
+					if (+string[i] == string[i]) {
+						break;
+					}
+				}
+				return i + 1;
+			}
+			let str = "sj123";
+			console.log(getFirstNumber(str));
+		</script>
+	</body>
+</html>
