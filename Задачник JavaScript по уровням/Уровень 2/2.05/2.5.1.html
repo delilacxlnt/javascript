@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.5.1</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка, например, вот такая: '023m0df0dfg0' Получите
+            массив позиций всех нулей в этой в строке.
+        </p>
+        <script>
+            "use strict";
+            function getZeros(string) {
+                let array = [];
+                let j = 0;
+                for (let i = 0; i < string.length; i++) {
+                    if (string[i] === "0") {
+                        array[j] = i;
+                        j++;
+                    }
+                }
+                return array;
+            }
+            console.log(getZeros("023m0df0dfg0"));
+        </script>
+    </body>
+</html>

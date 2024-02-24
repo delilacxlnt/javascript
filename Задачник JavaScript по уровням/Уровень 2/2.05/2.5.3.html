@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.5.3</title>
+    </head>
+    <body>
+        <p>
+            Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]
+            Поделите сумму элементов, стоящих на четных позициях, на сумму
+            элементов, стоящих на нечетных позициях.
+        </p>
+        <script>
+            "use strict";
+            function getValue(array) {
+                let oddSum = 0;
+                let evenSum = 0;
+                for (let i = 0; i < array.length; i++) {
+                    if (i % 2 == 0) {
+                        evenSum += array[i];
+                    } else {
+                        oddSum += array[i];
+                    }
+                }
+                return evenSum / oddSum;
+            }
+            console.log(getValue([2, 1, 2]));
+        </script>
+    </body>
+</html>

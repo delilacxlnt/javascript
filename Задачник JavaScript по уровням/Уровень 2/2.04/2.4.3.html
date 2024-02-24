@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>2.4.3</title>
-	</head>
-	<body>
-		<p>
-			Дано число. Выведите в консоль количество четных цифр в этом числе.
-		</p>
-		<script>
-			"use strict";
-			function getAmount(number) {
-				let numberArray = Array.from(String(number), Number);
-				let counter = 0;
-				for (let i = 0; i < numberArray.length; ++i) {
-					if (numberArray[i] % 2 == 0) {
-						counter++;
-					}
-				}
-				return counter;
-			}
-			console.log(getAmount(222));
-		</script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>2.4.3</title>
+  </head>
+  <body>
+    <p>Дано число. Выведите в консоль количество четных цифр в этом числе.</p>
+    <script>
+      "use strict";
+      function getAmount(number) {
+        let numberArray = Array.from(String(number), Number);
+        let counter = 0;
+        for (let i = 0; i < numberArray.length; ++i) {
+          if (numberArray[i] % 2 == 0) {
+            counter++;
+          }
+        }
+        return counter;
+      }
+      console.log(getAmount(222));
+    </script>
+  </body>
 </html>
