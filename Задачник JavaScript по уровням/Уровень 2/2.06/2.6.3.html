@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.6.3</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка с числом: '1234567' Отделите тройки цифр
+            пробелами, начиная с конца числа. В нашем случае должно получится
+            следующее: '1 234 567'
+        </p>
+        <script>
+            "use strict";
+            function separateNumbers(string) {
+                let index = string.length % 3;
+                let array = string.split("");
+                let newArray = [];
+                newArray[0] = array.splice(0, index).join("");
+                let j = 1;
+                let i = 0;
+                while (array.length > 0) {
+                    newArray[j] = array.splice(i, i + 3).join("");
+                    j++;
+                }
+                return newArray.join(" ");
+            }
+            console.log(separateNumbers("1211346456454644567"));
+        </script>
+    </body>
+</html>

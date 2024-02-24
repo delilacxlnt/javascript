@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.6.6</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка со словами: 'aaa bbb ccc eee fff' Сделайте
+            заглавным первый символ каждого второго слова в этой строке. В нашем
+            случае должно получится следующее: 'aaa Bbb ccc Eee fff'
+        </p>
+        <script>
+            "use strict";
+            function capitalizeWords(string) {
+                let array = string.split(" ");
+                for (let i = 1; i < array.length; i += 2) {
+                    array[i] = array[i].split("");
+                    array[i][0] = array[i][0].toUpperCase();
+                    array[i] = array[i].join("");
+                }
+                return array.join(" ");
+            }
+            console.log(capitalizeWords("aaa bbb ccc eee fff"));
+        </script>
+    </body>
+</html>

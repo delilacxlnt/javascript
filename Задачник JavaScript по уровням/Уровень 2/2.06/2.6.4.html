@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.6.4</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка: 'AbCdE' Смените регистр букв этой строки на
+            противоположный. В нашем случае должно получится следующее: 'aBcDe'
+        </p>
+        <script>
+            "use strict";
+            function changeCase(string) {
+                let newString = [];
+                for (let i = 0; i < string.length; i++) {
+                    if (string[i] === string[i].toUpperCase()) {
+                        newString[i] = string[i].toLowerCase();
+                    } else {
+                        newString[i] = string[i].toUpperCase();
+                    }
+                }
+                return newString.join("");
+            }
+            console.log(changeCase("AbCdE"));
+        </script>
+    </body>
+</html>
