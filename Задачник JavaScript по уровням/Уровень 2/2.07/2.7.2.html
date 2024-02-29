@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.7.2</title>
+    </head>
+    <body>
+        <p>
+            Дан символ. Узнайте, в каком регистре этот символ - в верхнем или
+            нижнем.
+        </p>
+        <script>
+            "use strict";
+            function getFontStyle(char) {
+                if (!isNaN(char)) {
+                    return "Не буква";
+                } else if (char === char.toLowerCase()) {
+                    return "Нижний";
+                } else if (char === char.toUpperCase()) {
+                    return "Верхний";
+                }
+            }
+            console.log(getFontStyle("A"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.7.1</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка: 'a bc def ghij' Переведите в верхний регистр
+            все подстроки, в которых количество букв меньше или равно трем. В
+            нашем случае должно получится следующее: 'A BC DEF ghij'
+        </p>
+        <script>
+            "use strict";
+            function capitalizeWords(string) {
+                let wordsArray = string.split(" ");
+                for (let i = 0; i < wordsArray.length; i++) {
+                    if (wordsArray[i].length <= 3) {
+                        wordsArray[i] = wordsArray[i].toUpperCase();
+                    }
+                }
+                return wordsArray.join(" ");
+            }
+            console.log(capitalizeWords("a bc def ghij"));
+        </script>
+    </body>
+</html>

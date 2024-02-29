@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.7.3</title>
+    </head>
+    <body>
+        <p>
+            Дано некоторое число, например, такое: 123789 Удалите из этого числа
+            все нечетные цифры. В нашем случае получится такой результат: 28
+        </p>
+        <script>
+            "use strict";
+            function removeEven(number) {
+                let numberArray = Array.from(String(number), Number);
+                let result = numberArray.filter((number) => number % 2 == 0);
+                return result;
+            }
+            console.log(removeEven(123789));
+        </script>
+    </body>
+</html>
