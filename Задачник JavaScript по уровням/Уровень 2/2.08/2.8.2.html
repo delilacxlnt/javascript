@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.8.2</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка: '1 22 333 4444 22 5555 1' Удалите из этой
+            строки все подстроки, в которых количество символов больше трех. В
+            нашем случае должно получится следующее: '1 22 333 22 1'
+        </p>
+        <script>
+            "use strict";
+            function removeSubtring(string) {
+                let array = string.split(" ");
+                let result = array.filter((substring) => substring.length < 4);
+                return result.join(" ");
+            }
+            console.log(removeSubtring("1 22 333 4444 22 5555 1"));
+        </script>
+    </body>
+</html>

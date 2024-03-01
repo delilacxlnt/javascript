@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.9.1</title>
+    </head>
+    <body>
+        <p>
+            Дано некоторое число: 123456 Найдите сумму пар цифр этого числа. В
+            нашем случае имеется ввиду следующее: 12 + 34 + 56
+        </p>
+        <script>
+            "use strict";
+            function getSum(number) {
+                let array = number.toString().split("");
+                let sum = 0;
+                for (let i = 0; i < array.length; i++) {
+                    var numPair = array.splice(0, 2).join("");
+                    sum += Number(numPair);
+                }
+                let integer = +array.join("");
+                return sum + integer;
+            }
+            console.log(getSum(12122));
+        </script>
+    </body>
+</html>

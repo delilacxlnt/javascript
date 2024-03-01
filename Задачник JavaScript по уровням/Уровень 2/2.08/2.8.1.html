@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.8.1</title>
+    </head>
+    <body>
+        <p>
+            Дана строка с буквами. Проверьте, что в этой строке не более двух
+            заглавных букв.
+        </p>
+        <script>
+            "use strict";
+            function checkUppercase(string) {
+                let array = string.split("");
+                let counter = 0;
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] === array[i].toUpperCase()) {
+                        counter++;
+                    }
+                }
+                if (counter <= 2) {
+                    return "В строке не более двух заглавных букв.";
+                }
+                return "В строке больше двух заглавных букв.";
+            }
+            console.log(checkUppercase("вФФФгд"));
+        </script>
+    </body>
+</html>
