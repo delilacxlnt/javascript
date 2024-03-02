@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.10.4</title>
+    </head>
+    <body>
+        <p>
+            Дан массив с числами: [1, 2, 3, 3, 4, 5] Проверьте, что в этом
+            массиве есть два одинаковых элемента подряд.
+        </p>
+        <script>
+            "use strict";
+            function checkValues(array) {
+                array.sort((a, b) => a - b);
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] == array[i + 1]) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            console.log(checkValues([1, 2, 3, 3, 4, 5]));
+        </script>
+    </body>
+</html>

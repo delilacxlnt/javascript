@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.10.2</title>
+    </head>
+    <body>
+        <p>Дано число. Получите первую четную цифру с конца этого числа.</p>
+        <script>
+            "use strict";
+            function getOddNumber(number) {
+                let array = Array.from(String(number), Number).reverse();
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] % 2 == 0) {
+                        return array[i];
+                    }
+                }
+                return "Четных цифр нет";
+            }
+            console.log(getOddNumber(5555552555));
+        </script>
+    </body>
+</html>

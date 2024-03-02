@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.10.1</title>
+    </head>
+    <body>
+        <p>
+            Дана строка с буквами и цифрами. Проверьте, что в этой строке не
+            более трех букв.
+        </p>
+        <script>
+            "use strict";
+            function checkForNumbers(string) {
+                let counter = 0;
+                for (let i = 0; i < string.length; i++) {
+                    if (isNaN(string[i])) {
+                        counter++;
+                    }
+                    if (counter > 3) {
+                        return "Больше 3 букв";
+                    }
+                }
+                return "Не более 3 букв";
+            }
+            console.log(checkForNumbers("абф12ф3"));
+        </script>
+    </body>
+</html>

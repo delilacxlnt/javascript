@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2.10.3</title>
+    </head>
+    <body>
+        <p>
+            Дана некоторая строка: 'abcde abcde abcde' Замените в ней первый
+            символ каждого слова на '!': '!bcde !bcde !bcde'
+        </p>
+        <script>
+            "use strict";
+            function replaceFirstChar(string) {
+                let array = string.split(" ");
+                let newArray = [];
+                for (let i = 0; i < array.length; i++) {
+                    newArray[i] = "!" + array[i].slice(1);
+                }
+                return newArray;
+            }
+            console.log(replaceFirstChar("abcde 123 abcde"));
+        </script>
+    </body>
+</html>
